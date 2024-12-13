@@ -80,3 +80,11 @@ Similarly, you can also reset passwords doing a similar process to unlocking an 
  You could also enable and disable a users account doing the same exact process that was done to reset the password, except when you right click on the users name, instead of clicking on reset password, you click on disable account or enable account, whichever you are looking to do.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/hloyWoh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+If we want to observe the logs of all of the activity from login attempts (successful and unsuccessful), reseting of passwords, unlocking of accounts, etc, this can be done going to the Event Viewer app in the Client VM (Client-1). You can open it from the client's profile, open Event Viewer as an adminsitrator, and then a box will open up for the administrator to put in their username and password. I entered the credentials for Jane Doe, and saw all of the log activity of fex.pih.
+</p>
+<br />
