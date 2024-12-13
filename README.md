@@ -36,19 +36,14 @@ First, we want to enter "gpmc.msc" under RUN in the start menu to open the Group
 <br />
 
 <p>
-<img src="https://i.imgur.com/ITqySOz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/iHJOGFd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this step, we created an administrative user (Admin User) and Organizational Units.
- 
-  *Create an Organizational Unit (OU) called _EMPLOYEES for employee users
-  
-  *Create an OU called _ADMINS for administrative users
-  
-  *Create a user named Jane Doe. Jane Doe will be added to the _ADMINS OU. Also, for this user to have admin privileges, Jane Doe must also be added to "Domain Admins"   
-   Security Group. 
-  
-After creating these OU's, we log out of the DC-1 as labuser, and then log back in, as Jane Doe, using the domain and user name for Jane Doe (mydomain.com\jane_admin).
+Next, we want to expand several of the domains, and sub-domains in the GPMC. 
+
+ First, right-click on "Default Domain Policy," listed under DOMAINS > mydomain.com, and click on edit. While editing, expand: Computer Configuration > Policies > Windows Settings > Security Settings > Account Lockout Policy.
+
+ Next, cick on Account Lockout Threshold and change the threshold to configure the password to use a lockout after "X" amount of failed attempts. I chose 5 for "X" so that accounts will be locked out after five failed attempts.  
 </p>
 <br />
 
