@@ -51,7 +51,7 @@ Next, we want to expand several of the domains, and sub-domains in the GPMC.
 <img src=https://i.imgur.com/MDtCHRz.png"" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-It is now listed under the Default Domain Policy under Group Policy Management. The settings can be changed to whatever the administrator would like to for account lockout settings.  
+It is now listed under the Default Domain Policy under Group Policy Management. The settings can be changed to whatever the administrator would like to for account lockout settings. Eventually, these settings will take effect, but it is not immediate. If we want it done immediately, this can be done by logging into Client-1 as an admin, like Jane Doe, opening up command line, and entering gpupdate /force. 
 </p>
 <br />
 
