@@ -56,25 +56,27 @@ It is now listed under the Default Domain Policy under Group Policy Management. 
 <br />
 
 <p>
-<img src="https://i.imgur.com/ww9maAa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wlT8HqA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, we want to ensure that Client-1's DNS settings are using DC-1'S private IP address. This should have already been done in the preparing Active Directory portion of the lab, but good to make sure. Then login into Client-1 using the local admin account "labuser" and join it to the domain "mydomain.com." Afterwards, we re-start the Client-1 virtual machine. Then we login into DC-1 Domain Controller as jane_admin, look under Windows Administrative Tools - Active Directory Users & Computers and look to verify that Client-1 is listed in the "CLIENTS" tab. Lastly, create an OU called _CLIENTS and move Client-1 into this OU. 
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/w0L1lEW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-In this step, you want to enter "Domain Users" as users that have access to use Remote Desktop, so that domain users may access the Client-1 from Remote Desktop.
+We can unlock fex.pih's account from Active Directory by going back in the Domain Controller DC-1 > goto Active Directory Users and Computers > mydomain.com > _EMPLOYEES > double click on the user whose account is locked out (fex.pih) > click on the account tab for fex.pih > and check on the unlock account box, and press apply and ok.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/RWpa8i4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/k2YhIeW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, Powershell ISE will be opened as an administrator. We will use a script that auto-create random user names of 10,000 employees and place these randown names in the Organizational Unit "_EMPLOYEES." The employee accounts can be checked by looking under Windows Administrative Tools - Active Directory Users & Computers and look to verify the random users. We will choose a random user, "fex.pih," logout out jane_admin, login as fex.pih and add the password for all emplyees of "Password1."
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/NPr5f2Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Similarly, you can also reset passwords doing a similar process to unlocking an account. To reset the password (or unlock the account), goto Active Directory Users and Computers > mydomain.com > _EMPLOYEES > right click on the user whose account is locked out (fex.pih) > click on the reset password option for fex.pih > and then give user a new password from the box and you can also unlock the account from this box and hit ok.
+
+ You could also enable and disable a users account doing the same exact process that was done to reset the password, except when you right click on the users name, instead of clicking on reset password, you click on disable account or enable account, whichever you are looking to do.
 </p>
 <br />
