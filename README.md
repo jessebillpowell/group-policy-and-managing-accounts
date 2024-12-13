@@ -48,10 +48,10 @@ Next, we want to expand several of the domains, and sub-domains in the GPMC.
 <br />
 
 <p>
-<img src="https://i.imgur.com/As8fhd3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/MDtCHRz.png"" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
+It is now listed under the Default Domain Policy under Group Policy Management. The settings can be changed to whatever the administrator would like to for account lockout settings.  
 </p>
 <br />
 
